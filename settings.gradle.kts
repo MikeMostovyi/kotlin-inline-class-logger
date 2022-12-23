@@ -1,3 +1,3 @@
 
-rootProject.name = "kotlin-value-class-logger"
+rootProject.name = "kotlin-inline-class-logger"
 
