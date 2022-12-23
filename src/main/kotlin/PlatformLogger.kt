@@ -18,6 +18,7 @@ object Log {
 
     var delegate: PlatformLogger = PrintlnLogger()
 
+    @JvmStatic
     fun d(tag: String, message: String) {
         delegate.d(tag, message)
     }

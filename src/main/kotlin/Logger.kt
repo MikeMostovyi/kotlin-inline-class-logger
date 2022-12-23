@@ -1,9 +1,10 @@
 @JvmInline
 value class Logger(
-    private val tag: String
+    val tag: String
 ) {
 
-    fun d(message: String) {
+    @Suppress("NOTHING_TO_INLINE")
+    inline fun d(message: String) {
         Log.d(tag, message)
     }
 }
