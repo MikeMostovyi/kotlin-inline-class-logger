@@ -30,7 +30,7 @@ class LoggerTest {
     }
 
     @Test
-    fun `creation of instances in anonymous classes is prohibited`() {
+    fun `using logger extension in anonymous objects is prohibited`() {
         assertFails {
             object : Runnable {
 

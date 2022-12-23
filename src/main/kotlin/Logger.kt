@@ -11,7 +11,7 @@ value class Logger(
 val Any.logger: Logger
     get() {
         val tag = requireNotNull(this::class.simpleName) {
-            "This logger cannot be used in anonymous classes"
+            "This logger cannot be used in anonymous objects"
         }
         return Logger(tag)
     }
